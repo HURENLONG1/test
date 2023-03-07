@@ -1,0 +1,72 @@
+
+/* 资源索引|数据体系 |当前图集*/
+@media only screen and (min-width: 1681px) { 
+	html { font-size: 100px!important; } 
+}
+@media only screen and (min-width: 1441px) and (max-width: 1680px) { 
+	html { font-size: 90px!important; } 
+}
+@media only screen and (min-width: 1281px) and (max-width: 1440px) { 
+	html { font-size: 80px!important; } 
+}
+@media only screen and  (max-width: 1280px) { 
+	html { font-size: 70px!important; } 
+}
+.flexBox{
+    display: flex!important;
+}
+
+
+/* pageNation 页码 */
+.pagination {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+    border-radius: 4px;
+    text-align: right;
+  }
+  
+  .page-box {
+    text-align: right;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .page-pop {
+    padding: 10px 0;
+  }
+  .page-pop span {
+    display: inline-block;
+    padding: 0 4px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+	cursor: pointer;
+	background-color: #ECECEC;
+	margin: 0 .05rem;
+	color: #858585;
+  }
+  .page-pop span:hover {
+    color: #1F7385;
+  }
+  .page-pop .p-num {
+    display: inline-block;
+  }
+  .page-pop .p-num .p-cur {
+    color: #fff;
+    background-color: #1F7385;
+  }
+  .page-pop .p-num span {
+    width: 30px;
+    cursor: default;
+  }
+  .page-pop .p-num .p-omit{
+    background: none;
+    
+  }
+  .page-pop .p-num span:not(.p-omit):hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+  }

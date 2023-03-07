@@ -1,0 +1,131 @@
+// 主题色
+$C-1 = #F7F8FA
+$C-2 = #D1EAFF
+$C-3 = #A8D5FF
+$C-4 = #80BDFF
+$C-5 = #57A2FF
+$C-6 = #2875E0
+$C-7 = #1654B8
+$C-8 = #09388F
+$C-9 = #002066
+$C-10 = #00113D
+$C-11 = #1A1B1F
+$C-12 = #5C5E66
+
+// 中性色
+$G-1 = #999999
+$G-2 = #CCCCCC
+$G-3 = #E6E6E6
+$G-4 = #FAFAFA
+$G-5 = #FFFFFF
+
+
+@import 'colors.styl'
+// 主色调 primary-[功能]-[类型]
+$primary-color =  $C-6
+$primary-color-light =  $C-2
+$primary-hover =  $C-5
+$primary-active =  $C-7
+$primary-disable =  $C-3
+$primary-shadow =  rgba($C-9 0.10)
+$primary-border =  rgba($C-10 0.08)
+$primary-alpha-mask =  rgba($C-11 0.60)
+$primary-textbg =  $G-4
+$primary-blockbg =  $C-1
+
+
+// 成功 [功能]-[类型]
+$success-color = #32C275
+$success-color-light = #E6FFEE
+
+// 错误
+$error-color =  #ED5353
+$error-color-light = #FFF1F1
+
+// 警告
+$warning-color =  #FF9838
+$warning-color-light = #FFF1E6
+
+// 高亮
+$highlight-color =  #ED5353
+$normal-color =  #d9d9d9
+$white =  #fff
+$black =  #000
+
+// 字体1-4号色
+// 一级标题\正文
+$title-color = $C-11
+// 正文
+$article-color = $C-12
+// 描述文字色
+$describe-color = $G-1
+// t补充性文字色
+$tips-color = $G-2
+
+// 其他
+$font-family =  
+  'Microsoft YaHei' 'Helvetica Neue' Helvetica Arial sans-serif 'Apple Color Emoji'
+  'Segoe UI Emoji' 'Segoe UI Symbol'
+
+// 普通文字
+$font-size-base =  14px
+$font-size-xl = $font-size-base + 4px
+$font-size-lg =  $font-size-base + 2px
+$font-size-sm =  12px
+
+// 标题
+$heading-1-size =  ceil($font-size-base * 2.71)
+$heading-2-size =  ceil($font-size-base * 2.14)
+$heading-3-size =  ceil($font-size-base * 1.71)
+$heading-4-size =  ceil($font-size-base * 1.42)
+
+// 行高
+$line-height-base =  1.5
+$border-radius-base =  4px
+$border-radius-sm =  2px
+
+// space
+$space-lg =  24px 
+$space-md =  16px 
+$space-sm =  12px 
+$space-xs =  8px 
+$space-xxs =  4px 
+
+// animation: name duration timing-function delay iteration-count direction;
+mixinanimation(name, duration=300ms, timing-function=linear, delay=0, iteration-count=1, direction=normal)
+    -webkit-animation:name duration timing-function delay iteration-count direction;
+    animation:name duration timing-function delay iteration-count direction;
+
+border-radius(n)
+    -webkit-border-radius n
+    -moz-border-radius n
+    -o-border-radius n
+    border-radius n
+// input placeholder color
+input-placeholder()
+    input::-webkit-input-placeholder 
+        color $tips-color
+    input::-moz-input-placeholder 
+        color $tips-color
+    input::-ms-input-placeholder 
+        color $tips-color
+    input::placeholder 
+        color $tips-color
+
+// input focus shadow
+input-focus()
+    box-shadow: 0 0 2px 1px   rgba($primary-color .4);
+
+btn-mixin($w=auto,$h=40px,$fz=$font-size-base,$c= $article-color,$align=center,$bdc=$primary-border,$bdrw=$border-radius-base,$bgc=#fff)
+    width $w
+    height $h
+    padding 0 1.5em
+    box-sizing border-box
+    line-height $h
+    font-size $fz
+    color $c
+    text-align $align
+    border 1px solid $bdc
+    display inline-block
+    border-radius $bdrw
+    background-color $bgc

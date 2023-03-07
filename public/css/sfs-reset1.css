@@ -1,0 +1,66 @@
+body,div,span,a,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,iframe,html{
+    margin:0;padding:0;border: 0;
+}
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    position: relative;
+    font: 14px/1.7 "microsoft yahei", "Lantinghei SC", "Heiti SC Light";
+}
+input, button, input, select, textarea, p, a{
+    font-family:  "microsoft yahei", "Lantinghei SC", "Heiti SC Light";
+}
+
+ul,ol{
+    list-style-type:none;
+}
+img{display: block;}
+select,input,img,select{
+    vertical-align:middle;
+}
+a:hover,a:visited,a:link{
+	text-decoration: none;
+}
+.fl{float: left;}
+.fr{float: right;}
+.ab{position: absolute;}
+.re{position: relative;}
+.fix{position: fixed;}
+.clear{clear: both;}
+.dis{display: none;}
+
+/*-----初始化bootstrap里面的部分样式 --start-----------*/
+.container{padding-left: 0; padding-right: 0;}
+.row{margin: 0;}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+{padding: 0;}
+
+.badge {
+    display: inline-block;
+    min-width: 24px;
+    padding: 3px 5px;
+}
+/*-----初始化bootstrap里面的部分样式 --end-----------*/
+/*隐藏IE10默认在input框输入内容后显示“X”按钮*/
+::-ms-clear{display: none;}
+::-ms-reveal{display: none;}
+
+
+/* //引入图标库 */
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sfs-font-icon','sfs-font-icon-2' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

@@ -1,0 +1,86 @@
+/* pageNation 页码 */
+.pagination {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .page-box {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: Arial, Helvetica, sans-serif,microsoft yahei;
+  }
+  
+  .page-pop {
+    font-size: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .page-pop > span {
+    padding: 0 .5em;
+  }
+  .page-pop span {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    margin: 0;
+    color: #858585;
+    margin: 0 3px;
+    border: 1px solid transparent;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .page-pop span:not(.p-omit):hover {
+    color: #38f;
+    border-color: #38f;
+  }
+  .page-pop .p-num {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .page-pop .p-num span {
+    padding: 0;
+    min-width: 26px;
+  }
+  .page-pop .p-num span.p-cur {
+    color: #fff;
+    background-color: #38f;
+  }
+  .page-pop .p-num span.p-omit {
+    cursor: default;
+    background: none;
+  }
+  
+  .page-pop.unfill span {
+    background: none;
+  }
+  
+  .page-pop.unfill .p-num span {
+    border: 0;
+  }
+  .page-pop.unfill .p-num span:hover {
+    border: 0;
+  }
+  .page-pop.unfill .p-num span.p-cur {
+    background: none;
+    color: #38f;
+    font-weight: bold;
+  }
+  
+  .page-pop.stroke span {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .page-pop.stroke .p-num span.p-cur {
+    border-color: #38f;
+  }
